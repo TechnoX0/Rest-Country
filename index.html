@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e9f315874a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="wrap">
+        <header class="shadow">
+            <div class="container">
+                <div id="header">
+                    <h1>Where in the World?</h1>
+                    <label for="theme-mode">
+                        <input type="checkbox" name="theme-mode" id="theme-mode" checked>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section id="home">
+                    <div id="filters">
+                        <div id="country-filter" class="shadow">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Search for a country...">
+                        </div>
+                        <div id="region-filter">
+                            <select name="" class="shadow">
+                                <option value="">Filter by Region</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div id="results"></div>
+                </section>
+                <section id="country-details">
+                    <div id="return-wrap">
+                        <button id="return" class="shadow"><i class="fa-solid fa-arrow-left"></i>Back</button>
+                    </div>
+                    <div id="content">
+                        <div id="country-flag">
+                            <img src="./design/desktop-design-detail-dark.jpg" alt="">
+                        </div>
+                        <div id="info-wrap">
+                            <h2 id="country-name">name</h2>
+                            <div id="details">
+                                <span>
+                                    <p class="native-name">undefined</p>
+                                    <p class="population">undefined</p>
+                                    <p class="region">undefined</p>
+                                    <p class="sub-region">undefined</p>
+                                    <p class="capital">undefined</p>
+                                </span>
+                                <span>
+                                    <p class="top-level-domain">undefined</p>
+                                    <p class="currencies">undefined</p>
+                                    <p class="languages">undefined</p>
+                                </span>
+                            </div>
+                            <div id="border-countries">
+                                <p>Border Countries:</p>
+                                <div id="countries">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
