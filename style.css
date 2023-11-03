@@ -120,6 +120,10 @@ main {
     border: none;
     outline: none;
     padding: 0 1rem 0 4rem;
+    color: var(--input);
+}
+
+#filters #country-filter input:focus {
     color: var(--text);
 }
 
