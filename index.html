@@ -10,16 +10,12 @@
 </head>
 <body>
     
-    <div id="wrap">
+    <div id="wrap" data-theme="dark">
         <header class="shadow">
             <div class="container">
                 <div id="header">
                     <h1>Where in the World?</h1>
-                    <label for="theme-mode">
-                        <input type="checkbox" name="theme-mode" id="theme-mode">
-                        <i class="fa-solid fa-moon"></i>
-                        Dark Mode
-                    </label>
+                    <button id="theme-toggle"><i class="fa-solid fa-moon"></i>Dark Mode</button>
                 </div>
             </div>
         </header>
@@ -32,7 +28,7 @@
                             <input type="text" placeholder="Search for a country...">
                         </div>
                         <div id="region-filter">
-                            <select name="" class="shadow">
+                            <select name="regions" class="shadow">
                                 <option value="">Filter by Region</option>
                             </select>
                             <i class="fa-solid fa-angle-down"></i>
@@ -51,18 +47,18 @@
                         <div id="info-wrap">
                             <h2 id="country-name">name</h2>
                             <div id="details">
-                                <span>
+                                <div>
                                     <p class="native-name">undefined</p>
                                     <p class="population">undefined</p>
                                     <p class="region">undefined</p>
                                     <p class="sub-region">undefined</p>
                                     <p class="capital">undefined</p>
-                                </span>
-                                <span>
+                                </div>
+                                <div>
                                     <p class="top-level-domain">undefined</p>
                                     <p class="currencies">undefined</p>
                                     <p class="languages">undefined</p>
-                                </span>
+                                </div>
                             </div>
                             <div id="border-countries">
                                 <p>Border Countries:</p>

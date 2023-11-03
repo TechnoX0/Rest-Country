@@ -1,3 +1,10 @@
+// Theme toggle
+const WRAP = document.getElementById("wrap")
+const THEME_BUTTON = document.getElementById("theme-toggle")
+
+THEME_BUTTON.addEventListener("click", () => WRAP.dataset.theme == "light" ? WRAP.dataset.theme = "dark" : WRAP.dataset.theme = "light")
+
+// Home section
 const HOME = document.getElementById("home")
 const COUNTRY_FILTER = document.getElementById("country-filter")
 const REGION_FILTER = document.getElementById("region-filter")

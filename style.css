@@ -18,7 +18,13 @@
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, .2);
 }
 
-#wrap:has(#header input[type="checkbox"]:checked) {
+/* #wrap:has(#header input[type="checkbox"]:checked) {
+    --background: hsl(207, 26%, 17%);
+    --elements: hsl(209, 23%, 22%);
+    --text: hsl(0, 0%, 100%);
+} */
+
+#wrap[data-theme="dark"] {
     --background: hsl(207, 26%, 17%);
     --elements: hsl(209, 23%, 22%);
     --text: hsl(0, 0%, 100%);
@@ -56,22 +62,17 @@ header {
     font-size: 1em;
 }
 
-#header label {
+#header button {
     display: flex;
     align-items: center;
     gap: .5rem;
     cursor: pointer;
     font-size: 1em;
-}
-
-#header label input {
-    display: none;
-}
-
-#header label i.fa-moon {
+    background: var(--elements);
+    outline: none;
+    border: none;
     color: var(--text);
 }
-
 
 /* Main */
 main {
